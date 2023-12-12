@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item List Web App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Item List Web App</h1>
+    <div id="inputForm">
+        <label for="itemName">Item Name:</label>
+        <input type="text" id="itemName" required>
+        <label for="itemPrice">Price:</label>
+        <input type="number" step="0.01" id="itemPrice" required>
+        <button onclick="addItem()">Save Item</button>
+    </div>
+    <div id="listControls">
+        <button onclick="displayItems()">Display List</button>
+        <button onclick="clearList()">Clear List</button>
+    </div>
+    <div id="itemList">
+        <!-- Items will be dynamically added here -->
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
